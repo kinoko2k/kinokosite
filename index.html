@@ -13,9 +13,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#4285f4">
         <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="css/4-1-2.css">
     </head>
 
     <body>
+        <div id="splash">
+            <div id="splash_text"></div>
+            <!--/splash--></div>
+            <div id="container">
         <div id="home" class="big-bg">
         <header class="page-header wrapper">
         <h1><a href="index.html"><img class="logo" src="image/logo.png" alt="Kinoko_2KIcon"></a></h1>
@@ -122,6 +127,8 @@
             <a class="twitter-timeline" data-lang="ja" data-width="320" data-height="400" data-theme="light" href="https://twitter.com/kinoko_network?ref_src=twsrc%5Etfw">Tweets by kinoko_network</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </aside>
     </div>
+    <p>ローディング後、この画面が見えます。</p>
+            <!--/container--></div>
     <footer>
         <div class="wrapper">
             <p class="mojang"><small>Minecraftは、 Mojang AB の登録商標です。当サーバは Mojang社から承認されておらず、Mojang社とは関係ありません。</p>
@@ -129,7 +136,13 @@
         </div>
     </footer>
     </body>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
+    <!--自作のJS-->
+    <script src="js/4-1-2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- ↓クリップボード操作のために使用するjsを読み込む　( https://clipboardjs.com/ ) -->
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
