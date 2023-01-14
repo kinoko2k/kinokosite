@@ -1,0 +1,15 @@
+span.smoothText {
+	overflow: hidden;
+	display: block;
+}
+
+/* アニメーションで傾斜がついている文字列を水平に戻す*/
+span.smoothTextTrigger{
+	transition: .8s ease-in-out;
+	transform: translate3d(0,100%,0) skewY(12deg);
+	transform-origin: left;
+	display: block;
+}
+span.smoothTextTrigger.smoothTextAppear{
+    transform: translate3d(0,0,0) skewY(0);
+}
