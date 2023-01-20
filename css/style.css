@@ -9,13 +9,15 @@ h1 {
     color: #432;
 }
 
+html { scroll-behavior: smooth;}
+
 h1.tokutyo {
   color: #6594e0;/*文字色*/
   /*線の種類（点線）2px 線色*/
   border-bottom: dashed 2px #6594e0;
 }
 
-h2 {
+h2.niku {
     font-family: "Nikukyu", sans-serif;
     color: skyblue;
     text-shadow: rgb(47, 255, 130);
@@ -183,6 +185,107 @@ h1.tokutyo {
   border-bottom: dashed 2px #6594e0;
 }
 
+/* 影でサーバー説明
+===================== */
+/*== 影が拡がって浮き上がる */
+
+/*ボタンの形状*/
+.float2{
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding:10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(128, 128, 128, 0.1) ;
+    /*アニメーションの設定*/
+    transition: all .3s;
+}
+
+/*hoverをしたらボックスの影が拡がり色が濃くなる*/
+.float2:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 128, 0.1) ;
+    border-color: transparent;
+}
+
+/* server contents */
+h2.sugo {
+    margin: 0 auto;
+}
+/* 数でごりおし */
+.btn101 {
+	padding: 20px 30px;
+	display: inline-block;
+	color: #333;
+	text-decoration :none;
+	text-align: center;
+	background: #ffbf4b;
+	transition: .4s;
+	
+	/*--影の複数指定--*/
+  　box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+   
+  　-webkit-tap-highlight-color: transparent;
+  　transition: .2s ease-out;
+}
+
+.btn101:hover {
+
+	transform: translateY(-4px);
+
+	/*--影の複数指定--*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+.btn102 {
+	padding: 20px 30px;
+	display: inline-block;
+	color: #333;
+	text-decoration :none;
+	text-align: center;
+	background: #4bffb1;
+	transition: .4s;
+	
+	/*--影の複数指定--*/
+  　box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+   
+  　-webkit-tap-highlight-color: transparent;
+  　transition: .2s ease-out;
+}
+
+.btn102:hover {
+
+	transform: translateY(-4px);
+
+	/*--影の複数指定--*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+.btn103 {
+	padding: 20px 30px;
+	display: inline-block;
+	color: #333;
+	text-decoration :none;
+	text-align: center;
+	background: #4bbaff;
+	transition: .4s;
+	
+	/*--影の複数指定--*/
+  　box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+   
+  　-webkit-tap-highlight-color: transparent;
+  　transition: .2s ease-out;
+}
+
+.btn103:hover {
+
+	transform: translateY(-4px);
+
+	/*--影の複数指定--*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+}
+/* ごりおしタイムここまで */
 .cssBtn5{
 	color:#FFF;
 	background-color: #576F9C;
