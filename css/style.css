@@ -602,6 +602,9 @@ h2.userad4 {
   margin-top: 20px;
 }
 
+h2.page-title {
+    color:green;
+}
 p.r11 {
     line-height: 3.0;
 }
@@ -656,7 +659,7 @@ p.r3 {
   width: 31.74603%;
   margin-right: 1.58730%;
   margin-bottom: 40px;
-  color: #333;
+  color: rgb(188, 117, 117);
 }
 
 .works-item:hover {
@@ -749,7 +752,59 @@ aside {
     margin-top: 50px;
 }
 
+/* 💬 */
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
 
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+ /* border: solid 3px #d7ebfe;
+  border-radius: 50%; */
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+p.name-top {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
 
 h1.play {
     color: #0bd;
