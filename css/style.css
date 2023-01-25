@@ -49,6 +49,96 @@ img {
     margin-top: 14px;
 }
 
+* {
+  margin:0; padding:0;
+}
+header.a {
+  height: 100px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #337079;
+  color: white;
+}
+header.a .headline{
+    line-height: 100px;
+    float: left;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+h1.daimei {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left:0;
+}
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+
+.site-header {
+  position: relative;
+  background-color: #def7ff; }
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 660px) {
+    .site-header__wrapper {
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (max-width: 659px) {
+  .site-header__end {
+    padding-right: 4rem; } }
+
+@media (min-width: 660px) {
+  .nav__wrapper {
+    display: flex; } }
+
+@media (max-width: 659px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem;
+  outline: none; }
+
+.nav__toggle {
+  display: none; }
+  @media (max-width: 659px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+
 /* oomisoka_member 
 -----*/
 .oomisoka {
@@ -85,6 +175,56 @@ img {
   color: white;
 }
 
+.btn-flat-border-discord {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #9267ff;
+  border: solid 2px #9267ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border-discord:hover {
+  background: #6779ff;
+  color: white;
+}
+
+/* discord */
+.text:has(.deco-\>:is(.deco-\~,.deco-\',.deco-\!,.deco-\#,.deco-\%,.deco-\&)) { padding-bottom: 5px; }
+.deco-\>:is(.deco-\~,.deco-\',.deco-\!,.deco-\#,.deco-\%,.deco-\&) {
+	padding: 7px 16px;
+	border-radius: 3px;
+	color: white;
+   margin: 0 2px;
+}
+.line:not(.cursor-line) .deco-\>:is(.deco-\~,.deco-\',.deco-\!,.deco-\#,.deco-\%,.deco-\&) { cursor: pointer; }
+	
+.deco-\>.deco-\~ { background: hsl(235, 85.6%, 64.7%); }
+.line:not(.cursor-line) .deco-\>.deco-\~:hover { background: hsl(235, 51.4%, 52.4%); }
+
+.deco-\>.deco-\' { background: hsl(217, 7.6%, 33.5%); }
+.line:not(.cursor-line) .deco-\>.deco-\':hover { background: hsl(213, 5%, 42.9%); }
+
+.deco-\>.deco-\! { background: hsl(359, 82.6%, 59.4%); }
+.line:not(.cursor-line) .deco-\>.deco-\!:hover { background: hsl(359, 56.3%, 40.4%) }
+
+.deco-\>.deco-\# { background: hsl(139, 47.1%, 33.3%) }
+.line:not(.cursor-line) .deco-\>.deco-\#:hover { background: hsl(138, 46.8%, 24.3%); }
+
+.deco-\>.deco-\% {
+	border: solid 1px hsl(359, 82.6%, 59.4%);
+	padding: 6px 16px;
+}
+.line:not(.cursor-line) .deco-\>.deco-\%:hover { background: hsl(359, 66.7%, 54.1%); }
+
+.deco-\>.deco-\& {
+	border: solid 1px hsl(235, 85.6%, 64.7%);
+	padding: 6px 16px;
+}
+.line:not(.cursor-line) .deco-\>.deco-\&:hover { background: hsl(235, 85.6%, 64.7%); }
+/* discord end */
+
 .head {
     width: 80px;
     height: 80px;
@@ -101,28 +241,34 @@ img {
     background-size: 30px;
     /* 丸みを帯びさせる */
     border-radius: 10px;
+    outline: none;
 
 }
 .main-nav li {
     margin-left: 30px;
+    outline: none;
 }
 .main-nav a {
     color: rgb(205, 39, 67);
+    outline: none;
 }
 .main-nav a:hover {
     color: rgb(25, 125, 25);
+    outline: none;
 }
 
 .menu {
-	list-style-type:none;
+	list-style-type: none;
+    outline: none;
 }
 .menu > li {
-	display:inline-block;
-	border:1px solid gray;
+
 	position:relative;
+    outline: none;
 }
 .menu > li > ul {
 	display:none;
+    outline: none;
 }
 .menu > li:hover ul {
 	display:block;
@@ -132,18 +278,22 @@ img {
 	top:1.5em;
 	left:0;
 	list-style-type:none;
-	border:1px solid gray;
+	border:1px solid rgb(221, 95, 95);
+    outline: none;
 }
 
 .page-header {
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    outline: none;
 }
 
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 4%;
+    outline: none;
 }
 
 /* home
