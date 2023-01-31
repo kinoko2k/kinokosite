@@ -1,0 +1,29 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 400 http://kinoko.ddns.net
+ErrorDocument 401 http://kinoko.ddns.net
+ErrorDocument 402 http://kinoko.ddns.net
+ErrorDocument 403 http://kinoko.ddns.net
+ErrorDocument 404 http://kinoko.ddns.net
+ErrorDocument 405 http://kinoko.ddns.net
+ErrorDocument 406 http://kinoko.ddns.net
+ErrorDocument 407 http://kinoko.ddns.net
+ErrorDocument 408 http://kinoko.ddns.net
+ErrorDocument 409 http://kinoko.ddns.net
+ErrorDocument 410 http://kinoko.ddns.net
+ErrorDocument 411 http://kinoko.ddns.net
+ErrorDocument 412 http://kinoko.ddns.net
+ErrorDocument 413 http://kinoko.ddns.net
+ErrorDocument 414 http://kinoko.ddns.net
+ErrorDocument 500 http://kinoko.ddns.net
+ErrorDocument 501 http://kinoko.ddns.net
+ErrorDocument 503 http://kinoko.ddns.net
+ErrorDocument 504 http://kinoko.ddns.net
+ErrorDocument 505 http://kinoko.ddns.net
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.kinoko\.ddns\.net)(:80)? [NC]
+RewriteRule ^(.*) http://kinoko.ddns.net/$1 [R=301,L]
+DirectoryIndex index.html       
+order deny,allow

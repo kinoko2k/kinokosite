@@ -5,6 +5,6 @@
     RewriteEngine on
     RewriteCond %{HTTP_HOST} ^(www\.kinoko\.ddns\.net/about)(:80)? [NC]
     RewriteRule ^(.*) http://kinoko.ddns.net/about/$1 [R=301,L]
-    DirectoryIndex index.html       
+    DirectoryIndex about.html       
     order deny,allow
     
