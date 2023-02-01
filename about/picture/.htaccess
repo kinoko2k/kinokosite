@@ -1,0 +1,10 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+    deny from all
+    </Files>
+    Options -Indexes
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^(www\.kinoko\.ddns\.net/picture)(:80)? [NC]
+    RewriteRule ^(.*) http://kinoko.ddns.net/picture/$1 [R=301,L]
+    DirectoryIndex picture.html       
+    order deny,allow
+    
