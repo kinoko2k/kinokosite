@@ -31,7 +31,8 @@ h2.niku {
 }
 
 p.tanosi {
-    color: white;
+    color: yellow;
+font-size: 26px;
 }
 
 a {
@@ -315,7 +316,7 @@ ul {
 
 /* 見出し */
 .page-title {
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-family: 'Philosopher', serif;
     text-transform: uppercase;
     font-weight: normal;
@@ -469,7 +470,7 @@ h2.sugo {
 }
 
 #home {
-    background-image: url(../image/site-background-image1.png);
+    background-image: url(../image/site-background-image3.png);
     min-height: 100vh;
 }
 
@@ -597,6 +598,10 @@ p.r12 {
     line-height: 2.0;
 }
 
+h2.jou {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  margin-bottom: 10px;
+}
 /* Server about
 ------------------------------- */
 table{
