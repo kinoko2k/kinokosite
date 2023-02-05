@@ -224,6 +224,43 @@ p.white {
     color:#ffffff
 }
 
+/* 
+** boom1-contents
+*/
+.wrapper1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5%;
+    outline: none;
+}
+
+h1.kasen {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+.sakuseisya {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #00BCD4;
+    background: #e4fcff;/*背景色*/
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.sakuseisya p.sya {
+    margin: 0; 
+    padding: 0;
+}
+
+article.sakuseisya1 {
+    text-align: left;
+}
+
+.example {
+  display:inline-block;
+  width: 1200px;
+  margin-left: 100px;
+}
+
 /* home
 */
 
