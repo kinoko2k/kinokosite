@@ -257,8 +257,43 @@ article.sakuseisya1 {
 
 .example {
   display:inline-block;
-  width: 1200px;
+  width: 1000px;
   margin-left: 100px;
+}
+
+.example2 {
+  display:inline-block;
+  width: 1200px;
+  margin-left: 1000px;
+
+}
+
+.sakuseisya2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #00BCD4;
+    background: #e4fcff;/*背景色*/
+    border-top: solid 6px #1dc1d6;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.sakuseisya p.sya {
+    margin: 0; 
+    padding: 0;
+}
+
+article.sakuseisya3 {
+    text-align: left;
+    display: inline-block;
+
+}
+
+div.sakuseisya2 
+
+.boom1-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 /* home
@@ -423,13 +458,6 @@ aside {
 }
 
 .admin-contents {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.boom1-contents {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
