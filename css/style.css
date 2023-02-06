@@ -783,11 +783,11 @@ h2.page-title {
         border-collapse: collapse;  /* セルの線を重ねる */
     }
      
-    th,td {
+    th.sigoto ,td.sigoto {
         padding: 5px 10px;          /* 余白指定 */
     }
      
-    th {
+    th.sigoto {
         background-color: #2196F3;  /* 背景色指定 */
         color:  #fff;               /* 文字色指定 */
         font-weight:  normal;       /* 文字の太さ指定 */
@@ -795,12 +795,12 @@ h2.page-title {
         z-index: 10;                /* 重なり調整 */
     }
      
-    td {
+    td.sigoto {
         background-color:  #c0c9ff; /* 背景色指定 */
         padding-left: 25px;         /* 余白指定 */
     }
      
-    th::after {
+    th.sigoto::after {
         content:'';                 /* 空の要素を作る */
         position:  absolute;        /* 位置指定 */
         height: 24px;               /* 高さ指定 */
@@ -812,7 +812,7 @@ h2.page-title {
         z-index:  -1;               /* 重なり調整 */
     }
      
-    tr {
+    tr.sigoto {
         border-bottom:  solid #fff; /* 線指定 */
     }
 /* admin ここまで */
