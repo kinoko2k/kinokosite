@@ -296,6 +296,21 @@ div.sakuseisya2
     margin-top: 50px;
 }
 
+/* boom2-contents */
+
+div.boom2-contents {
+
+    margin-left: 100px;
+    box-shadow: #0bd;
+    background-image: url(../image/3.jpg);
+    
+}
+img.bom2 {
+    margin-left: 600px;
+
+}
+
+/* boom2-contents-end */
 /* home
 */
 
